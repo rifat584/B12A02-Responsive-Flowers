@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #f5f8ff;
 }
 
 /* Shared Styles */
@@ -29,6 +29,13 @@ body {
 }
 .secondary-font {
   font-family: "Noto Serif", serif;
+
+}
+
+.primary-btn {
+  background-color:rgb(233, 90, 8) ;
+  color: white;
+  border: none;
 
 }
 
@@ -90,7 +97,7 @@ body {
 
 
 .banner-content p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -102,9 +109,69 @@ body {
   height: auto;
 }
 
+/* Products Showcase Section */
+
+.product-showcase {
+  margin-top: 7.5rem;
+  text-align: center;
+}
+
+.product-showcase h3 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.product-showcase span {
+color:  rgb(233, 90, 8) ;
+}
+
+.product-showcase p {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.5) ;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  
+}
+
+.all-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem 1rem;
+}
+
+.product {
+  
+}
+
+.product img {
+  margin-bottom: 1.5rem;
+}
+
+.product h4{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(17, 17, 17);
+  
+}
+
+.product h4:nth-child(3) {
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.product button {
+  width: 16.875rem;
+  height: 3.125rem;
+  margin-top: 1.5rem ;
+  font-weight: 600;
+}
 
 
 
+
+
+
+/* Responsive Design for MOBILE */
 
 @media (max-width:768px) {
   .nav-menu a:nth-child(1) ,
@@ -113,6 +180,12 @@ body {
     display: none;
   }
 
+.banner-section { 
+  flex-direction: column-reverse;
+}
 
+.all-products {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 }
