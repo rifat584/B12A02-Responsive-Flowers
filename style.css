@@ -139,10 +139,6 @@ color:  rgb(233, 90, 8) ;
   gap: 1.5rem 1rem;
 }
 
-.product {
-  
-}
-
 .product img {
   margin-bottom: 1.5rem;
 }
@@ -167,7 +163,50 @@ color:  rgb(233, 90, 8) ;
 }
 
 
+/* Flower & Plant Lover Section */
 
+.flower-lover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 9rem;
+  gap: 4rem;
+}
+
+.lover-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.lover-content ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.lover-content img {
+  width: 17.5rem;
+  position: absolute;
+  transform: translate(-15rem, -40rem);
+  filter: drop-shadow(-.25rem .4rem .25rem rgba(0, 0, 0, 0.25));
+
+}
+
+.lover-content h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.lover-content ul li{
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.5);
+  list-style-position: outside;
+  margin-left: 2rem;
+  
+}
 
 
 
@@ -186,6 +225,15 @@ color:  rgb(233, 90, 8) ;
 
 .all-products {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.flower-lover {
+  flex-direction: column;
+
+}
+
+.lover-content img {
+  display: none;
 }
 
 }
