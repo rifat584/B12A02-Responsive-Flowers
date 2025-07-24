@@ -6,10 +6,9 @@
   /* border: solid 2px red; */
 }
 
-body, .html {
+.container {
   max-width: 1440px;
   margin: 0 auto;
-  overflow-x: hidden
 }
 
 .content-size {
@@ -19,6 +18,12 @@ body, .html {
 
 body {
   background-color: #f5f8ff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Shared Styles */
@@ -50,6 +55,9 @@ body {
   margin-top: 3.3rem;
 }
 
+.nav-bar img {
+  max-width: 150px;
+}
 /* Nav Menu */
 
 .nav-menu {
@@ -144,6 +152,7 @@ color:  rgb(233, 90, 8) ;
 
 .product img {
   margin-bottom: 1.5rem;
+  max-width: 100%;
 }
 
 .product h4{
@@ -179,7 +188,7 @@ color:  rgb(233, 90, 8) ;
 .lover-img {
   width: 100%;
   max-width: 100%;
-  height: auto;
+  
 }
 
 /* lover content */
@@ -306,6 +315,10 @@ color:  rgb(233, 90, 8) ;
   flex: 1;
 }
 
+.footer-logo img {
+  max-width: 150px;
+}
+
 .footer-logo p {
   margin-top: 1rem;
 }
@@ -338,11 +351,16 @@ color:  rgb(233, 90, 8) ;
 /* Responsive Design for MOBILE */
 
 @media (max-width:768px) {
+   body {
+    padding: 1rem; 
+  }
+
   .nav-menu a:nth-child(1) ,
   .nav-menu a:nth-child(2) ,
   .nav-menu a:nth-child(3) {
     display: none;
   }
+
 
 .banner-section { 
   flex-direction: column-reverse;
@@ -352,14 +370,6 @@ color:  rgb(233, 90, 8) ;
 .banner-content h1{
   font-size: 3rem;
 }
-
-
-
-
-
-
-
-
 
 .all-products {
   grid-template-columns: repeat(2, 1fr);
@@ -373,6 +383,12 @@ color:  rgb(233, 90, 8) ;
 .lover-content img {
   display: none;
 }
+
+.lover-content ul li{
+  margin-left: 0;
+   list-style-position: inside;
+}
+
 
 .deals {
   flex-direction: column;
