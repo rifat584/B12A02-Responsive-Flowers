@@ -3,15 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: solid 2px red; */
 }
 
-.container {
-  width: 1440px;
+body, .html {
+  max-width: 1440px;
   margin: 0 auto;
+  overflow-x: hidden
 }
 
 .content-size {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -80,16 +82,17 @@ body {
 
 /* Banner Content */
 
-.banner-content {
+/* .banner-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-}
+} */
 
 .banner-content h1 {
   font-size: 4rem;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 .banner-content span {
   color: rgb(233, 90, 8);
@@ -103,7 +106,7 @@ body {
 
 /* Banner/Hero Image */
 .banner-img {
-  flex: 1;
+  /* flex: 1; */
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -220,7 +223,8 @@ color:  rgb(233, 90, 8) ;
 
 .deals div img {
   border-radius: 1rem;
-  
+  width: 100%;
+  max-width: 100%;
 }
 
 .bloom-ana {
@@ -249,12 +253,14 @@ color:  rgb(233, 90, 8) ;
 .join-us {
   margin-top: 9rem;
   background-image: url(./assets/news-letter-bg.png);
-  height: 533px;
+  height: auto;
+  padding: 10%;
   width: 100%;
+  max-width: 100%;
   text-align: center;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .join-us h3 {
@@ -271,12 +277,13 @@ color:  rgb(233, 90, 8) ;
 }
 
 .form form input {
-  width: 40rem;
+  width: 40vw;
   height: 3rem;
   padding-left: 1.25rem;
   font-size: 1rem;
   font-family: "Inter", sans-serif;
   border: none;
+  max-width: 100%;
   
 }
 
@@ -292,7 +299,7 @@ color:  rgb(233, 90, 8) ;
   justify-content: space-between;
   align-items: center;
   margin: 4rem auto;
-  gap: 6rem;
+  gap: 5.5rem;
 }
 
 .footer-logo {
@@ -341,6 +348,19 @@ color:  rgb(233, 90, 8) ;
   flex-direction: column-reverse;
 }
 
+
+.banner-content h1{
+  font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
 .all-products {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -354,6 +374,9 @@ color:  rgb(233, 90, 8) ;
   display: none;
 }
 
+.deals {
+  flex-direction: column;
+}
 .footer {
   flex-direction: column;
   align-items: flex-start;
