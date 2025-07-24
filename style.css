@@ -329,18 +329,6 @@ color:  rgb(233, 90, 8) ;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Join us Section */
 .join-us {
   margin-top: 9rem;
@@ -473,6 +461,15 @@ color:  rgb(233, 90, 8) ;
 .lover-content ul li{
   margin-left: 0;
    list-style-position: inside;
+}
+
+.deal-card {
+  flex-direction: column;
+  width: 100%;
+}
+
+.deal-card h3 {
+  font-size: 2rem;
 }
 
 
