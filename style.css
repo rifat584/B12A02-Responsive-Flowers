@@ -285,8 +285,48 @@ color:  rgb(233, 90, 8) ;
   height: 3rem;
 }
 
+/* Footer Section */
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem auto;
+  gap: 6rem;
+}
 
+.footer-logo {
+  flex: 1;
+}
+
+.footer-logo p {
+  margin-top: 1rem;
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex: 2;
+  
+}
+
+.footer-nav a {
+  width: 50%;
+  line-height: 3rem;
+  text-decoration: none;
+  color: rgb(107, 114, 128);
+  justify-self: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons img {
+  width: 100%;
+  height: auto;
+}
 
 /* Responsive Design for MOBILE */
 
@@ -312,6 +352,22 @@ color:  rgb(233, 90, 8) ;
 
 .lover-content img {
   display: none;
+}
+
+.footer {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem;
+  gap: 2rem;
+}
+
+.footer-nav {
+  grid-template-columns: repeat(1, 1fr);
+  
+}
+
+.footer-nav {
+  width: auto;
 }
 
 }
